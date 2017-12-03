@@ -42,6 +42,7 @@ program
   .option("-s --site-id [id]", "Deploy to site with <id>")
   .option("-p --path [path]", "Path to a folder or zip file to deploy")
   .option("-d --draft", "Deploy as a draft without publishing")
+  .option("--silent", "Output only live deploy url")
   .action(config.wrap(program, deploy.cmd));
 
 program
